@@ -1,0 +1,241 @@
+.menu > li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu > li > a {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 1199px) {
+    .menu > li > a {
+      padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .menu > li > a {
+      padding: 10px;
+    }
+  }
+  
+  .menu > li > a:hover {
+    color: #97ae76;
+  }
+  
+  .menu > li > ul {
+    position: absolute;
+    left: 0;
+    top: 115%;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: top .3s ease 0s, opacity .3s;
+    z-index: 99;
+  }
+  
+  .menu > li > ul li {
+    position: relative;
+  }
+  
+  .menu > li > ul ul {
+    position: absolute;
+    left: 115%;
+    top: 0;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: left .3s ease 0s, opacity .3s;
+  }
+  
+  .menu > li:hover > ul {
+    top: 100%;
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  
+  .menu > li li:hover > ul {
+    left: 100%;
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  
+  .menu > li:last-child > ul {
+    right: 0;
+    left: auto;
+  }
+  
+  .menu > li:last-child > ul ul {
+    left: auto;
+    right: 110%;
+    transition: right .3s ease 0s, opacity .3s;
+  }
+  
+  .menu > li:last-child li:hover > ul {
+    right: 100%;
+    left: auto;
+  }
+  
+  .menu > li:first-child > a {
+    padding-left: 0;
+  }
+  
+  .menu > li:last-child > a {
+    padding-right: 0;
+  }
+  
+  .menu li > ul {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .navbar-toggle {
+    margin: 0;
+    padding: 0;
+    height: 17px;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .navbar-toggle .icon-bar {
+    background: #333;
+    transition: all 0.3s ease-in-out;
+    width: 17px;
+    height: 1px;
+  }
+  
+  /* Animation when menu open */
+  .mm-opened .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(3px, 4px);
+  }
+  
+  .mm-opened .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mm-opened .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, -4px);
+  }
+  
+  /* Custom Template */
+  .menu ul li a {
+    color: #666666;
+    padding: 15px;
+    display: block;
+    min-width: 200px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu li:hover > a {
+    color: #97ae76;
+  }
+  
+  .menu ul li:hover > a {
+    transform: translateX(5px);
+  }
+  
+  .mm-search input {
+    border-radius: 4px;
+  }
+  
+  .mm-menu.mm-offcanvas {
+    max-width: 300px;
+  }
+  
+  .mm-navbar-top-1 {
+    height: 40px;
+  }
+  
+  .mm-navbar-top-1 a {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  
+  .mm-navbar-top-1 img {
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .header-2-inner {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 48px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  @media (max-width: 1199px) {
+    .header-2-inner {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header-2-inner {
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 8px 15px;
+    }
+  }
+  
+  .header-2-inner nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  
+  @media (max-width: 991px) {
+    .header-2-inner nav .menu > li > a {
+      font-size: 12px;
+      padding: 10px 4px;
+    }
+  }
+  
+  .header-2-inner .brand-logo {
+    margin: 0 35px;
+  }
+  
+  @media (max-width: 1199px) {
+    .header-2-inner .brand-logo {
+      width: 160px;
+      margin: 0 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header-2-inner .brand-logo {
+      margin: 0;
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header-2-inner .widget-control-header.widget-search-header {
+      display: none;
+    }
+  }
+  
+  .header-2-inner .widget-control-header.widget-search-header .btn-open-search-form {
+    display: none;
+  }
+  
+  @media (max-width: 1350px) {
+    .header-2-inner .widget-control-header.widget-search-header .btn-open-search-form {
+      display: block;
+    }
+  }
