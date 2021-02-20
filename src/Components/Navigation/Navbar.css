@@ -97,8 +97,11 @@
     #main-header.header-v2 .header-right {
       /* margin-right: 30px;  */
     }
-    #main-header.header-v2 .header-right span{
-        margin-right: 10px;  
+    #main-header.header-v2 .header-right svg{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+
       }
       #main-header.header-v2 .header-right.active .search-popup a {
         color: #FFF; }
@@ -184,6 +187,5 @@
 
 
         .logo .img-responsive{
-            width: 100%;
             height: 45px;
         }

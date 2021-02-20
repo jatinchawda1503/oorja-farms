@@ -2,17 +2,36 @@ import React, { Component } from 'react';
 import { $ }  from 'react-jquery-plugin'
 import '../Navigation/Navbar.css';
 import {Link} from 'react-router-dom';
-import LOGO from '../../logo.svg';
-import { LogoWhatsapp,LogoFacebook,LogoInstagram } from 'react-ionicons';
+import LOGO from '../../images/logo.png';
+import { FaWhatsapp,FaFacebookF,FaInstagram } from 'react-icons/fa';
 
 class Navbar extends Component {
-  handleToggle = () =>{
-    $(this).toggleClass('active');
-        $('.header-v2').toggleClass('menu-popup-open');
-        $('#content_menu_popup').toggleClass('menu-popup-open');
-        $('.logo').toggleClass('active');
-        $('.header-right').toggleClass('active');
-  }
+//   handleToggle = () =>{
+//     $(this).toggleClass('active');
+//         $('.header-v2').toggleClass('menu-popup-open');
+//         $('#content_menu_popup').toggleClass('menu-popup-open');
+//         $('.logo').toggleClass('active');
+//         $('.header-right').toggleClass('active');
+//   }
+
+//   mobileToggle = (event) =>{
+//     event.stopPropagation();
+//     $('body').toggleClass('menu-open');
+//     $("#pbr-off-canvas").toggleClass("active");
+//   }
+
+//   handleContainer = () =>{
+//     $(document).bind("mouseup touchend", function(e) {
+//         var container = $("#pbr-off-canvas");
+//         if (!container.is(e.target) // if the target of the click isn't the container...
+//             &&
+//             container.has(e.target).length === 0) // ... nor a descendant of the container
+//         {
+//            $("#pbr-off-canvas").removeClass("active");
+//            $('body').removeClass('menu-open');
+//         }
+//     });
+//   }
   render () {
     return (
         <div>
@@ -24,7 +43,7 @@ class Navbar extends Component {
                                         <div className="main-menu">
                                             <div id="menu-popup" className="menu-popup">
                                                 <Link to="#"></Link>
-                                                <div className="burger-menu" onClick={this.handleToggle}><span></span></div>
+                                                <div className="burger-menu" ><span></span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -36,9 +55,11 @@ class Navbar extends Component {
                                     </div>                
                                     <div className="col-xl-4 col-lg-4 col-md-5">
                                         <div className="header-right">
-                                            <LogoWhatsapp color={'#00000'} title={'Whatsaspp'} height="30px" width="30px"/>
-                                            <LogoFacebook color={'#00000'} title={'Facebook'} height="30px" width="30px"/>
-                                            <LogoInstagram color={'#00000'} title={'Instagram'} height="30px" width="30px"/>
+                                            <FaWhatsapp color={'#00000'} title={'Whatsaspp'} height="30px" width="30px"/>
+                                            <FaFacebookF color={'#00000'} title={'Facebook'} height="30px" width="30px"/>
+                                            <FaInstagram color={'#00000'} title={'Instagram'} height="30px" width="30px"/>
+
+                                            <i className="fa fa-facebook" aria-hidden="true"></i>
                                         </div>                   
                                     </div>
                             </div>
