@@ -1,4 +1,4 @@
-import { $ }  from 'react-jquery-plugin'
+import { $ }  from 'react-jquery-plugin';
     
     $(document).ready(function() {
     "use strict";
