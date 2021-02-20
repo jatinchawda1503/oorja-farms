@@ -1,0 +1,189 @@
+#main-header .main-menu .navbar {
+    margin: 0;
+    float: right; }
+  
+  #main-header .main-menu .navbar-nav li {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 300; }
+   
+    #main-header .main-menu .navbar-nav li .submenu-v1 ul li {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      list-style-type: disc;
+      font-weight: 400;
+      margin-bottom: 10px; }
+  
+  #main-header .header-right {
+    align-items: center;
+    justify-content: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #main-header .header-right .search {
+      margin-right: 35px;
+      margin-top: 4px;
+      font-size: 16px;
+      cursor: pointer; }
+      #main-header .header-right .search i {
+        font-size: 30px; }
+  
+  #main-header.header-default .inner {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 25px 0;
+    grid-template-columns: 200px 1fr 200px;
+    display: -webkit-grid;
+    display: -webkit-grid;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: grid; }
+  
+  #main-header.header-default .main-menu .megamenu-default .submenu-v1 {
+    right: calc(50% - 460px); }
+  
+  #main-header.header-default .main-menu .megamenu-fullwidth .submenu-v1 {
+    right: calc(50% - 400px); }
+  
+  #main-header.header-page .inner {
+    display: -webkit-grid;
+    display: -webkit-grid;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 160px 1fr;
+    padding: 25px 35px 25px 8px; }
+  
+  #main-header.header-page .logo a {
+    display: inline-block; }
+  
+  #main-header.header-page .main-menu .navbar {
+    float: none;
+    padding: 0; }
+  
+  #main-header.header-v2 {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    top: 18px;
+    z-index: 99;
+    /* overflow: hidden; */
+}
+    #main-header.header-v2 .container-fluid {
+      /* padding: 0; */
+     }
+    #main-header.header-v2 .inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between; }
+    #main-header.header-v2 .logo {
+      display: block; }
+      #main-header.header-v2 .logo a {
+        display: inline-block; }
+      #main-header.header-v2 .logo .logo-white {
+        display: none; }
+      #main-header.header-v2 .logo.active .logo-default {
+        display: none; }
+      #main-header.header-v2 .logo.active .logo-white {
+        display: inline-block; }
+    #main-header.header-v2 .main-menu {
+      /* margin-left: 30px; */
+      position: relative; }
+    #main-header.header-v2 .header-right {
+      /* margin-right: 30px;  */
+    }
+    #main-header.header-v2 .header-right span{
+        margin-right: 10px;  
+      }
+      #main-header.header-v2 .header-right.active .search-popup a {
+        color: #FFF; }
+      #main-header.header-v2 .header-right.active .shopping-cart {
+        top: 0; }
+        #main-header.header-v2 .header-right.active .shopping-cart .text-cart {
+          color: #FFF; }
+
+          .burger-menu {
+            background-color: #FFF;
+            cursor: pointer;
+            padding: 17px 14px;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            width: 50px;
+            height: 50px; }
+            .burger-menu.active span {
+              background: transparent; }
+              .burger-menu.active span:before, .burger-menu.active span:after {
+                top: 0;
+                width: 24px !important; }
+              .burger-menu.active span:before {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg); }
+              .burger-menu.active span:after {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+            .burger-menu.active:hover span:before {
+              -webkit-transform: rotate(135deg);
+              -moz-transform: rotate(135deg);
+              -ms-transform: rotate(135deg);
+              -o-transform: rotate(135deg);
+              transform: rotate(135deg); }
+            .burger-menu.active:hover span:after {
+              -webkit-transform: rotate(-135deg);
+              -moz-transform: rotate(-135deg);
+              -ms-transform: rotate(-135deg);
+              -o-transform: rotate(-135deg);
+              transform: rotate(-135deg); }
+            .burger-menu span {
+              background-color: #3c3c3c;
+              display: block;
+              margin-top: 7px;
+              position: relative;
+              -moz-transition: all 0.2s ease-out;
+              -webkit-transition: all 0.2s ease-out;
+              -o-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out;
+              -webkit-transform: translateY(100%);
+              -moz-transform: translateY(100%);
+              -ms-transform: translateY(100%);
+              -o-transform: translateY(100%);
+              transform: translateY(100%);
+              width: 16px;
+              height: 2px; }
+              .burger-menu span:before, .burger-menu span:after {
+                background-color: #3c3c3c;
+                content: '';
+                left: 0;
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out; }
+              .burger-menu span:before {
+                top: -9px; }
+              .burger-menu span:after {
+                top: 9px; }
+            .burger-menu:hover span {
+              width: 24px; }
+              .burger-menu:hover span:before, .burger-menu:hover span:after {
+                width: 16px; }
+          
+
+
+        .logo .img-responsive{
+            width: 100%;
+            height: 45px;
+        }
