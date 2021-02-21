@@ -55,11 +55,9 @@ class Navbar extends Component {
                                     </div>                
                                     <div className="col-xl-4 col-lg-4 col-md-5">
                                         <div className="header-right">
-                                            <FaWhatsapp color={'#00000'} title={'Whatsaspp'} height="30px" width="30px"/>
-                                            <FaFacebookF color={'#00000'} title={'Facebook'} height="30px" width="30px"/>
-                                            <FaInstagram color={'#00000'} title={'Instagram'} height="30px" width="30px"/>
-
-                                            <i className="fa fa-facebook" aria-hidden="true"></i>
+                                            <Link to="#"><FaWhatsapp color={'#43d854'} title={'Whatsaspp'} height="30px" width="30px"/></Link>
+                                            <Link to="#"><FaFacebookF color={'#3b5998'} title={'Facebook'} height="30px" width="30px"/></Link>
+                                            <Link to="#"><FaInstagram color={'#c32aa3'} title={'Instagram'} height="30px" width="30px"/></Link>
                                         </div>                   
                                     </div>
                             </div>
@@ -108,19 +106,17 @@ class Navbar extends Component {
                     <div className="menu-popup-body">
                         <ul className="navbar-menu">
                             <li className="items">
-                                <Link to="shop-v1.html"><span>Store</span></Link>
+                                <Link to="/"><span>Home</span></Link>
                             </li>
                             <li className="items">
-                                <Link to="aboutus.html"><span>About Us</span></Link>
+                                <Link to="/about-us"><span>About Us</span></Link>
                             </li>
                             <li className="items">
-                                <Link to="track-your-order.html"><span>Pages</span></Link>
+                                <Link to="/shop"><span>Shop</span></Link>
                             </li>
+                          
                             <li className="items">
-                                <Link to="#"><span>News</span></Link>
-                            </li>
-                            <li className="items">
-                                <Link to="contactus.html"><span>Contact Us</span></Link>
+                                <Link to="/contact-us"><span>Contact Us</span></Link>
                             </li>
                         </ul>
                     </div>
@@ -138,16 +134,16 @@ class Navbar extends Component {
                         <nav className="navbar navbar-offcanvas navbar-static">
                             <ul className="nav navbar-nav">
                                 <li className="level1 active hassub">
-                                    <Link to="shop-v1.html">Store</Link>
+                                <Link to="/"><span>Home</span></Link>
                                 </li>
                                 <li className="level1 hassub">
-                                    <Link to="aboutus.html">About</Link>
+                                <Link to="/about-us"><span>About Us</span></Link>
                                 </li>
                                 <li className="level1 hassub">
-                                    <Link to="blog-v1.html">News</Link>
+                                    <Link to="/shop"><span>Shop</span></Link>
                                 </li>
                                 <li className="level1 hassub">
-                                    <Link to="contactus.html">Contact</Link>
+                                <Link to="/contact-us"><span>Contact Us</span></Link>
                                 </li>
                             </ul>
                         </nav>
