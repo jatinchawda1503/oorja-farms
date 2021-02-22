@@ -1,37 +1,10 @@
 import React, { Component } from 'react';
-import { $ }  from 'react-jquery-plugin'
 import '../Navigation/Navbar.css';
 import {Link} from 'react-router-dom';
 import LOGO from '../../images/logo.png';
 import { FaWhatsapp,FaFacebookF,FaInstagram } from 'react-icons/fa';
 
 class Navbar extends Component {
-//   handleToggle = () =>{
-//     $(this).toggleClass('active');
-//         $('.header-v2').toggleClass('menu-popup-open');
-//         $('#content_menu_popup').toggleClass('menu-popup-open');
-//         $('.logo').toggleClass('active');
-//         $('.header-right').toggleClass('active');
-//   }
-
-//   mobileToggle = (event) =>{
-//     event.stopPropagation();
-//     $('body').toggleClass('menu-open');
-//     $("#pbr-off-canvas").toggleClass("active");
-//   }
-
-//   handleContainer = () =>{
-//     $(document).bind("mouseup touchend", function(e) {
-//         var container = $("#pbr-off-canvas");
-//         if (!container.is(e.target) // if the target of the click isn't the container...
-//             &&
-//             container.has(e.target).length === 0) // ... nor a descendant of the container
-//         {
-//            $("#pbr-off-canvas").removeClass("active");
-//            $('body').removeClass('menu-open');
-//         }
-//     });
-//   }
   render () {
     return (
         <div>

@@ -110,4 +110,31 @@ import { $ }  from 'react-jquery-plugin';
         });
     }
 
+    // $('#slideshow').owlCarousel({
+    //     margin: 0,
+    //     autoplay: false,
+    //     autoplayTimeout: 3000,
+    //     loop: true,
+    //     dots: false,
+    //     nav: true,
+    //     navText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"],
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         480: {
+    //             items: 1
+    //         },
+    //         1024: {
+    //             items: 1
+    //         },
+    //         1200: {
+    //             items: 1
+    //         }
+    //     }
+    // });
+
+
+
 });
+

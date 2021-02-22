@@ -13,7 +13,7 @@ function App() {
     <Switch>
       <Route path="/" component={Home} />
       </Switch>
-      <Switch>
+      {/* <Switch>
       <Route path="/" component={Home} />
       </Switch>
       <Switch>
@@ -24,7 +24,7 @@ function App() {
       </Switch>
       <Switch>
       <Route path="/" component={Home} exact />
-      </Switch>
+      </Switch> */}
 
     </Router>
     </>
