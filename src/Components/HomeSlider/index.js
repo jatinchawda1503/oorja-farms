@@ -14,17 +14,38 @@ import Product4 from '../../images/product/4.png';
 import ReactOwlCarousel from 'react-owl-carousel';
 
 
+// import dynamics from 'dynamics.js/lib/dynamics.js';
+// import classie from '../../external/js/classie.js';
 
-import  '../../external/js/Handleslider';
-import {Helmet} from "react-helmet";
 
+import {CircleSlideshow} from '../../external/js/Handleslider';
+//import '../../external/js/Handleslider';
 
+ //var CircleSlideshow;
 class HomeSlider extends Component {
    
    render(){
+
+    // (() => {
+    //   //  document.documentElement.className = 'js';
+    //      //CircleSlideshow(document.getElementById('slideshow'));
+    //      //window["CircleSlideshow"](document.getElementById('slideshow'));
+    // })();
+
+
+    // slide = () => {
+    //     window.CircleSlideshow(document.getElementById('slideshow'));
+    //   }
+
+    // slide()
+    // {
+    //     CircleSlideshow(document.getElementById('slideshow'));
+    // }
+
+    
     return (
         <div>
-			<div id="slideshow" className="slideshow">
+			<div id="slideshow" className="slideshow" onLoad={this.slide} >
 
                 <SlideItems 
                 title = "Macadamia Skin Oil"
@@ -59,10 +80,8 @@ class HomeSlider extends Component {
                 />
 				<button className="action action--close" aria-label="Close"><i className="fa fa-close"></i></button>
 			</div>
-            <Helmet>
-
-
-            </Helmet>
+            
+           
 
         </div>
 
