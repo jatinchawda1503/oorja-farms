@@ -1,11 +1,4 @@
-
-import dynamics from 'dynamics.js/lib/dynamics.js';
-import classie from './classie.js';
-
-
-		
-		
-		
+			
 			;(function(window) {
 
 				'use strict';
@@ -32,7 +25,7 @@ import classie from './classie.js';
 				/**
 				 * Circle Slideshow
 				 */
-				export default function CircleSlideshow(el, options) {
+				function CircleSlideshow(el, options) {
 					this.el = el;
 					this.options = extend( {}, this.options );
 					extend( this.options, options );
@@ -506,18 +499,13 @@ import classie from './classie.js';
 					);
 				};
 		
-				window.CircleSlideshow = new CircleSlideshow;
-				
+				window.CircleSlideshow = CircleSlideshow;
+		
 			})(window);
 		
-			
+
 
  
 
-			(function() {
-				document.documentElement.className = 'js';
-				var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
-			})();
-
-
+			
 

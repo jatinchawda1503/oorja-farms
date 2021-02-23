@@ -14,18 +14,25 @@ import Product4 from '../../images/product/4.png';
 import ReactOwlCarousel from 'react-owl-carousel';
 
 
-import dynamics from 'dynamics.js/lib/dynamics.js';
-import classie from '../../external/js/classie.js';
-
+//import dynamics from 'dynamics.js/lib/dynamics.js';
+//import classie from '../../external/js/classie.js';
+// import {appendScript} from './../../exportScripts';
 
 //import {CircleSlideshow} from '../../external/js/Handleslider';
-import '../../external/js/Handleslider';
+// import '../../external/js/Handleslider';
 
  //var CircleSlideshow;
 class HomeSlider extends Component {
-   
+    // componentDidMount () {
+        
+    //     appendScript("../../external/js/classie.js");
+    //     appendScript("../../external/js/dynamics.js");
+    //     appendScript("../../external/js/Handleslider.js");
+    // }
    render(){
+
     
+
     return (
         <div>
 			<div id="slideshow" className="slideshow">
